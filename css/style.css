@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "K2D", sans-serif;
+  background: url("../bg.jpg");
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(2px);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.srisakdi-bold {
+  font-family: "Srisakdi", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navv {
+        background: linear-gradient(
+        115deg,
+        #b9935a,
+        #f5e79d,
+        #e6c067,
+        #a67c00,
+        #f9f295,
+        #b9935a
+      );
+      background-size: 400% 400%;
+      animation: goldA 8s ease infinite;
+      color: white;
+}
+
+    @keyframes goldA {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
